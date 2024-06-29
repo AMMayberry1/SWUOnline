@@ -17,5 +17,6 @@ RUN cp /usr/local/etc/php/php.ini-development /usr/local/etc/php/php.ini
 
 FROM base as dev
 RUN pecl install xdebug
+RUN docker-php-ext-enable xdebug
 
 FROM base as prod
