@@ -1,4 +1,6 @@
-# local debug settings
+# this file holds debug-specific settings for docker-compose launch
+# by default, docker-compose.override.yml will be merged with docker-compose.yml for docker compose commands (see https://docs.docker.com/compose/multiple-compose-files/merge/#additional-information)
+# to run without the debug settings (i.e. to mirror the live configuration), use docker-compose -f docker-compose.yml
 version: "3.7"
 services:
   web-server:
