@@ -29,6 +29,7 @@ for i in **/*.php; do
         done
     fi
 done
+)
 
 if [[ $linting_passed == true ]]; then
     echo -e "\n${GREEN_TEXT}PHP linting succeeded${RESET_TEXT}"

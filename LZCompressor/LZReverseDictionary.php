@@ -14,8 +14,7 @@ class LZReverseDictionary
 
     public $entries = array(0, 1 ,2);
 
-    public function size() {
-        return count($this->entries);
+    public function size()eturn count($this->entries);
     }
 
     public function hasEntry($index) {
