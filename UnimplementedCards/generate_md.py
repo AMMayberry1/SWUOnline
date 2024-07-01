@@ -34,7 +34,7 @@ def validate_md(root_dir: Path, image_files: list[Path]):
         actual_md_file = f.read()
 
     if expected_md_file != actual_md_file:
-        print("Unimplemented cards readme file is out of date and does not match the contents of './UnimplementedCards/'. Please run `python ./UnimplementedCards/generate_md.py --generate` to update it.", file=sys.stderr)
+        print("Unimplemented cards readme file is out of date and does not match the contents of the folder './UnimplementedCards/'. Please run `python ./UnimplementedCards/generate_md.py --generate` to update it.", file=sys.stderr)
         sys.exit(1)
 
 def save_md(save_dir: Path, image_files: list[Path]):
