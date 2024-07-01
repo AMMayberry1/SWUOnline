@@ -41,7 +41,7 @@ def validate_md(root_dir: Path, image_files: list[Path], verbose: bool):
         print("\n")
 
     if expected_md_file != actual_md_file:
-        print("Unimplemented cards readme file is out of date and does not match the contents of the folder './UnimplementedCards/'. Please run `python ./UnimplementedCards/generate_md.py --generate` to update it.", file=sys.stderr)
+        print("Unimplemented cards readme file is out of date and does not match the contents of the folder './UnimplementedCards/'. Please run `python ./UnimplementedCards/generate_md.py generate` to update it.", file=sys.stderr)
         sys.exit(1)
     
     print("Unimplemented cards readme validation passed")

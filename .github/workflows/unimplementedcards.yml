@@ -13,4 +13,4 @@ jobs:
       - name: Install Python
         uses: actions/setup-python@v4
       - name: Run readme validation script
-        run: python UnimplementedCards/generate_md.py --validate
+        run: python UnimplementedCards/generate_md.py validate --verbose
